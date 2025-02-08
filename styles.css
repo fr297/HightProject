@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+    font-size: larger;
+    font-weight: 350;
+    margin: 20px;
+    margin-left: 100px;
+    color: rgb(4, 125, 211);
+    font-family: 'Poppins', sans-serif;
+}
+.part1 {
+    color: rgb(4, 125, 211);
+}
+.part2 {
+    color: blue;
+}
+nav {
+    margin: 20px;
+    margin-right: 80px;
+    text-align: right;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(4, 125, 211);
+    font-size: medium;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(4, 125, 211);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 450;
+    font-size: 1200;
+    margin-left: 100px;
+    margin-top: 300px;
+}
+.wid {
+    margin-bottom: 0;
+    margin-left: 100px;
+    font-size: small;
+    color: gray;
+}
+img {
+    width: 600px;
+    height: 500px;
+    position: fixed;
+    top: 150px;
+    right: 100px;
+}
+.world {
+    color: rgb(4, 125, 211);
+}
+button {
+    margin-top: 30px;
+    margin-left: 100px;
+    background: linear-gradient(blue, #0065be, rgb(84, 161, 255));
+    color: white;
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+   transform: scale(1.1);
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+    img {
+        width: 2000px;
+        height: auto;
+        margin-right: 100px;
+        margin-top: 240px;
+    }
+    div {
+        margin-top: 550px;
+        margin-left: 200px;
+    }
+    h1 {
+        font-size: 150px;
+    }
+    .wid {
+        font-size: 40px;
+    }
+    button {
+        width: 400px;
+        height: 80px;
+        border-radius: 40px;
+        margin-top: 60px;
+    }
+    nav a {
+        font-size: 50px;
+        padding: 60px;
+        margin-top: 40px;
+    }
+    .logo {
+        font-size: 50px;
+        margin-left: 200px;
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+      header {
+        height: 150px;
+      }
+      .logo {
+        font-size: 50px;
+        margin-top: 40px;
+      }
+      nav a {
+        font-size: 40px;
+        padding: 30px;
+        margin-top: 40px;
+      }
+      img {
+        width: 90%;
+        height: auto;
+        position: fixed;
+        top: 200px;
+        left: 50px;
+      }
+      div {
+        position: fixed;
+        top: 1100px;
+      }
+      h1 {
+        font-size: 120px;
+      }
+      .wid {
+        font-size: 40px;
+      }
+      button {
+        margin-top: 60px;
+        width: 300px;
+        height: 70px;
+        border-radius: 40px;
+      }
+}
+
+@media (max-width: 320px) {
+    header {
+        height: 250px;
+    }
+    .logo {
+        font-size: 50px;
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+    nav {
+        margin-top: 90px;
+    }
+    nav a {
+        font-size: 40px;
+        padding: 20px;
+        margin-top: 90px;
+    }
+    img {
+        width: 97%;
+        height: auto;
+        position: fixed;
+        top: 300px;
+    }
+    div {
+        position: fixed;
+        top: 900px;
+    }
+    h1 {
+        font-size: 90px;
+        margin-left: 60px;
+    }
+    .wid {
+        font-size: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    button {
+        margin-top: 50px;
+        margin-left: 60px;
+        width: 300px;
+        height: 80px;
+        border-radius: 40px;
+    }
+}
